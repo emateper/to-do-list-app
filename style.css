@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poetsen One, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* efecto de cada contenedor */
+
+.container, .add-list, .list-section, .checked-container {
+    backdrop-filter: blur(2.4px) saturate(148%);
+    -webkit-backdrop-filter: blur(2.4px) saturate(148%);
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    padding: 20px;
+    
+    
+}
+
+.add-list {
+    
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.add-list input {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.add-list i {
+    font-size: 30px;
+}
+
+.add-list i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* encabezado de la lista */
+
+.list-section {
+    box-sizing: inherit;
+    height: auto; 
+    min-height: 400px;
+    max-height: 500px; 
+    overflow-y: auto;
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.list-section h2 {
+    margin-top: 20px;
+}
+
+/* Lista de tarea */
+
+div ul li, .realizedTask {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #6ea7a9;
+    box-shadow: 5px 5px 10px #000;
+}
+
+div ul li i {
+    font-size: 20px;
+}
+
+div ul li i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+
+
+
